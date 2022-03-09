@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const app = express();
+const port = process.env.PORT || 4000
 require("dotenv").config()
 
 app.use(bodyParser.json());
@@ -86,6 +87,6 @@ app
     res.send("Book added successfully.")
 })
 
-app.listen(4000, () => {
+app.listen(port, () => {
     console.log('Books service started on port 4000');
 });
