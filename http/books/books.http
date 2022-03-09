@@ -1,0 +1,2 @@
+GET http://localhost:4000/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NDY4NTE2Mjd9.ShE0EnKqjPCWaNktaR6i0VeMCVNgNS_pDETH8_mutn8
