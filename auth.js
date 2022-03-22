@@ -4,6 +4,7 @@ const port = process.env.PORT || 8080
 const jwt = require("jsonwebtoken")
 const bodyParser = require("body-parser")
 require('dotenv').config(); 
+const cors = require("cors")
 
 const users = [
     {
@@ -19,7 +20,7 @@ const users = [
 ];
 
 app.use(bodyParser.json()) // middleware to parse JSON body from HTTP request
-
+app.use(cors())
 // Request handler to handle user login request
 const accessTokenSecret = process.env.ACCESS_TOKEN_SECRET
 
